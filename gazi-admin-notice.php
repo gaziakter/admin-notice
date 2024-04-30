@@ -1,6 +1,6 @@
 <?php
 /*
- * Plugin Name:       Admin Notice
+ * Plugin Name:       WP Admin Notice
  * Plugin URI:        https://gaziakter.com/plugins/admin-notice/
  * Description:       Handle the basics with this plugin.
  * Version:           1.0.0
