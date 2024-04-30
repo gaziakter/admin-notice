@@ -22,9 +22,19 @@ class Admin_Notice{
 
     function __construct(){
         add_action( 'init', [$this, 'init'] );
+        add_action('admin_notices', [$this, 'gazi_notice']);
     }
 
     function init(){
+
+    }
+
+    function gazi_notice(){
+        ?>
+        <div class="notice notice-success is-dismissible">
+        <p><?php _e( 'Done! Operation successful', 'admin-notice' ); ?></p>
+        </div>
+        <?php
 
     }
 }
