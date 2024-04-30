@@ -30,11 +30,17 @@ class Admin_Notice{
     }
 
     function gazi_notice(){
-        ?>
-        <div class="notice notice-success is-dismissible">
-        <p><?php _e( 'Done! Operation successful', 'admin-notice' ); ?></p>
-        </div>
-        <?php
+        global $pagenow;
+        $admin_pages = [ 'index.php', 'edit.php', 'plugins.php' ];
+        if ( in_array( $pagenow, $admin_pages ) ) {
+            if ( date( 'j, F' ) === '30, April' ) { 
+                ?>
+                <div class="notice notice-warning is-dismissible">
+                    <p>Happy Independence Day, Nigeria...</p>
+                </div>
+                <?
+            }
+        }
 
     }
 }
